@@ -1,2 +1,5 @@
 # G3_Hello_Dolphin
-Just an example
+Complete the first page of the website 
+- nav bar
+###### Don't forget to 'npm i' to install node modules before starting the project
+
