@@ -4,7 +4,7 @@ import Sc1_background from '../images/section1_bg.png';
 const Section = styled.div`
 	display: flex;
 	flex-direction: column;
-	align-item: center;
+	align-items: center;
 	justify-content: center;
 	width: 100vw;
 	height: 100vh;

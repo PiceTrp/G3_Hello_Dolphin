@@ -1,5 +1,6 @@
 import Navbar from './Navbar.js';
 import Section1 from './Section1.js';
+import Section2 from './About';
 
 export default () => {
 	return (
@@ -7,5 +8,7 @@ export default () => {
 			<Navbar />
 			<Section1 />
 		</div>
+
+		
 	);
 };

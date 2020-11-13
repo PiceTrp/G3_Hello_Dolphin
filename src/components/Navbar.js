@@ -7,7 +7,7 @@ const Nav = styled.div`
 	height: 80px;
 	padding: 0 360px 0 360px;
 	display: flex;
-	align-item: center;
+	align-items: center;
 	justify-content: space-around;
 	background-color: transparent;
 `;
@@ -35,7 +35,7 @@ const NavItem = styled.div`
 	color: white;
 	display: flex;
 	flex-direction: column;
-	align-item: center;
+	align-items: center;
 	justify-content: center;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
