@@ -7,7 +7,7 @@ export default () => {
 		<div className="App">
 			<Navbar />
 			<Section1 />
-			<About />			
+			<About />	
 		</div>
 
 		
