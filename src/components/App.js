@@ -1,3 +1,10 @@
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link
+} from "react-router-dom";
+
 import Navbar from './Navbar.js';
 import About from './About.js';
 import Section1 from './Section1.js';
@@ -13,16 +20,28 @@ import Section8 from './Section8.js';
 export default () => {
 	return (
 		<div className="App">
-			<Navbar />
-			<Section1 />
-			<Section2 />
-			<Section3 />
-			<Section4 />
-			<Section5 />
-			<Section6 />
-			<Section7 />
-			<Section8 />
-			<About />
-		</div>
+			<Router>
+				<Switch>
+					<Route path="/toro">
+						<Section7 />
+					</Route>
+					<Route path="/bon">
+						<Section6 />
+					</Route>
+					<Route path="/respect">
+						<Section8 />
+					</Route>
+					<Route path="/">
+						<Navbar />
+						<Section1 />
+						<Section2 />
+						<Section3 />
+						<Section4 />
+						<Section5 />
+					</Route>
+				</Switch>
+			</Router>
+
+		</div >
 	);
 };

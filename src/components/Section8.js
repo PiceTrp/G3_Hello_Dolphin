@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import grey from '../images/grey_wave.png';
 import respect from '../images/respect1.png';
+import { Link } from 'react-router-dom';
 
 const Bg = styled.div`
     width: 100vw;
@@ -32,12 +33,15 @@ const Box2 = styled.div`
 `;
 
 const Text_box = styled.div`
-    width: 634px;
-    height: 690px;
+    width: auto;
+    height: 670px;
     background: rgba(0, 0, 0, 0.37);
     margin-top: 140px;
     padding-top: 200px;
     padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+
 `;
 
 const Text = styled.p`
@@ -47,6 +51,35 @@ const Text = styled.p`
     font-size: 20px;
     text-align: left;
     color: white;
+`;
+
+const TextEng = styled.p`
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 43px;
+    text-align: left;
+    color: white;
+    margin-top: 90px;
+`;
+
+const BoxButton = styled.div`
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex: 1;
+    margin-right: 30px;
+    margin-bottom: 53px;
+`;
+
+const Button = styled.div`
+    width: 182px;
+    height: 74px;
+    background: rgba(18, 27, 34, 0.87);
+    font-size: 30px;
+    color: white;
+    padding-top: 10px;
+    text-decoration: none;
 `;
 
 export default () => {
@@ -62,7 +95,17 @@ export default () => {
                     แล้วก็จุดไฟ ว่ากันว่าบรรพบุรุษจะขี่ควันจากดวงไฟ <br></br>
                     นี้กลับมายังโลกโดยไม่หลงทาง <br /> ผู้คนมากมายจะไปเคารพหลุมศพพร้อมหน้ากันทั้งครอบครัว
                     </Text>
+                    <TextEng>
+                        Pay respect to ancestor
+                    </TextEng>
                 </Text_box>
+                <Link to="/">
+                    <BoxButton>
+                        <Button>
+                            Back
+                        </Button>
+                    </BoxButton>
+                </Link>
             </Box2>
         </Bg>
     )

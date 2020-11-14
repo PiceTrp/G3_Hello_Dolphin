@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import img_1 from '../images/Chroms.png';
 import img_2 from '../images/Vector_2.png';
@@ -124,21 +125,27 @@ export default () => {
                     <TextCard>
                         Toro Nagashi
                     </TextCard>
-                    <Button>とうろう流し)</Button>
+                    <Link to="/toro">
+                        <Button>とうろう流し)</Button>
+                    </Link>
                 </Card1>
                 <Card2>
                     <Img src={img_2} />
                     <TextCard>
                         Bon Odori dance
                     </TextCard>
-                    <Button>盆踊りダンス</Button>
+                    <Link to="/bon">
+                        <Button>盆踊りダンス</Button>
+                    </Link>
                 </Card2>
                 <Card3>
                     <Img src={img_3} />
                     <TextCard>
                         Pay respect to ancestor
                     </TextCard>
-                    <Button>おぼん</Button>
+                    <Link to="/respect">
+                        <Button>おぼん</Button>
+                    </Link>
                 </Card3>
             </BoxCard>
         </Bg>
