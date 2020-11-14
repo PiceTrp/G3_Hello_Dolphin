@@ -4,7 +4,7 @@ import Sc1_background from '../images/section1_bg.png';
 const Section = styled.div`
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-item: center;
 	justify-content: center;
 	width: 100vw;
 	height: 100vh;
@@ -33,7 +33,7 @@ const Text2 = styled.h1`
 
 export default () => {
 	return (
-		<Section>
+		<Section id="section1">
 			<>
 				<Text1>Obon</Text1>
 				<Text2>Festival</Text2>

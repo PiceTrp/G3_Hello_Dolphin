@@ -2,14 +2,18 @@ import styled from 'styled-components';
 import logo from '../images/logo.svg';
 
 const Nav = styled.div`
-	position: absolute;
+	position: fixed;
 	width: 100vw;
 	height: 80px;
 	padding: 0 360px 0 360px;
 	display: flex;
-	align-items: center;
+	align-item: center;
 	justify-content: space-around;
-	background-color: transparent;
+	background-color: black;
+	-webkit-box-shadow: 0px 5px 12px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 12px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 12px 0px rgba(0,0,0,0.75);
+	z-index: 2000;
 `;
 
 const NavLogo = styled.div`
@@ -21,13 +25,14 @@ const NavLogo = styled.div`
 	background-color: white;
 	border-radius: 40px;
 	padding: 10px;
+	z-index: 2001;
 `;
 
 const NavLogoImg = styled.img`
 	max-height: 100%;
 `;
 
-const NavItem = styled.div`
+const NavItem = styled.a`
 	flex: 2;
 	max-width: 150px;
 	height: 100%;
@@ -35,13 +40,19 @@ const NavItem = styled.div`
 	color: white;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-item: center;
 	justify-content: center;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
+	transition: .5s;
+	color: #FFF;
+	text-decoration: none;
 
 	&:hover {
 		background-color: #555;
+		color: #FFF;
+		text-decoration: none;
+		font-weight: bold;
 	}
 `;
 
@@ -55,23 +66,23 @@ const NavItemText = styled.p`
 export default () => {
 	return (
 		<>
+			<Nav>
+				<NavItem href="#section1">
+					<NavItemText>Home</NavItemText>
+				</NavItem>
+				<NavItem href="#section2">
+					<NavItemText >About</NavItemText>
+				</NavItem>
+				<NavItem href="#section3" >
+					<NavItemText >Activities</NavItemText>
+				</NavItem>
+				<NavItem href="#section4">
+					<NavItemText >Date</NavItemText>
+				</NavItem>
+			</Nav >
 			<NavLogo>
 				<NavLogoImg src={logo} />
 			</NavLogo>
-			<Nav>
-				<NavItem>
-					<NavItemText>Home</NavItemText>
-				</NavItem>
-				<NavItem>
-					<NavItemText>About</NavItemText>
-				</NavItem>
-				<NavItem>
-					<NavItemText>Activities</NavItemText>
-				</NavItem>
-				<NavItem>
-					<NavItemText>Date</NavItemText>
-				</NavItem>
-			</Nav >
 		</>
 	);
 }

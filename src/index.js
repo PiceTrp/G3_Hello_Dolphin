@@ -4,8 +4,10 @@ import App from './components/App';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'typeface-josefin-sans';
+import 'typeface-prompt';
 import './styles/index.css';
 import './styles/App.css';
+import 'typeface-athiti';
 
 ReactDOM.render(
 	<React.StrictMode>
