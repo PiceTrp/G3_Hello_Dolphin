@@ -22,6 +22,7 @@ export default () => {
 			<Section6 />
 			<Section7 />
 			<Section8 />
+			<About />
 		</div>
 	);
 };
