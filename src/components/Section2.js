@@ -33,9 +33,10 @@ const Bird = styled.img`
 
 const TextHead = styled.p`
     font-family: Josefin Sans;
+    color: black;
     font-style: normal;
     font-weight: bold;
-    font-size: 72px;
+    font-size: 70px;
 `;
 
 const Divider = styled.div`

@@ -61,7 +61,7 @@ const BoxButton = styled.div`
     justify-content: flex-end;
     flex: 1;
     margin-right: 4px;
-    margin-buttom: 2px;
+    margin-bottom: 2px;
 `;
 
 const Button = styled.div`

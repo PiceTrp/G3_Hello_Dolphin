@@ -4,7 +4,7 @@ import prop from '../images/GroupBG_sec5.png';
 
 const Bg = styled.div`
     width: 100vw;
-    height: 100vh;
+    height: 135vh;
     background: rgba(56, 55, 55, 0.67);
     background-image: url(${prop});
     background-size: cover;
@@ -13,6 +13,7 @@ const Bg = styled.div`
 const Text = styled.div`
     font-family: Josefin Sans;
     font-style: normal;
+    color: black;
     font-weight: bold;
     font-size: 64px;
     text-transform: uppercase;
@@ -52,7 +53,7 @@ const Text2 = styled.p`
     font-weight: normal;
     font-size: 20px;
     color: white;
-    text-align: left;
+    text-align: left ;
 `;
 
 

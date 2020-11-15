@@ -38,7 +38,7 @@ const Text_1 = styled.p`
     font-family: Josefin Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 40px;
     margin-top: 50px;
     margin-left: 90px;
     text-align: left;
@@ -48,7 +48,7 @@ const Text_2 = styled.p`
     font-family: prompt;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 24px;
     margin-top: 20px;
     margin-left: 90px;
     margin-right: 200px;
@@ -61,7 +61,7 @@ const BoxButton = styled.div`
     justify-content: flex-end;
     flex: 1;
     margin-right: 4px;
-    margin-buttom: 2px;
+    margin-bottom: 2px;
 `;
 
 const Button = styled.div`

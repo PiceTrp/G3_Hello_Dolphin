@@ -16,6 +16,7 @@ const Text = styled.div`
     font-family: Josefin Sans;
     font-style: normal;
     text-transform: uppercase;
+    color: black;
     font-weight: bold;
     font-size: 64px;
     margin-top: 80px;
